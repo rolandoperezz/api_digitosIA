@@ -3,6 +3,7 @@ import tensorflow as tf
 from tensorflow.keras.datasets import mnist
 
 # Cargar el conjunto de datos MNIST
+
 # Contiene imágenes de dígitos escritos a mano de 28x28 píxeles en escala de grises
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
