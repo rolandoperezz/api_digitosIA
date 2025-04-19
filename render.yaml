@@ -3,7 +3,7 @@ services:
     name: fastapi-digitos
     env: python
     buildCommand: ""
-    startCommand: uvicorn api.main:app --host 0.0.0.0 --port 10000
+    startCommand: bash -c "python -m uvicorn api.main:app --host 0.0.0.0 --port=$PORT"
     plan: free
     envVars:
       - key: PORT
